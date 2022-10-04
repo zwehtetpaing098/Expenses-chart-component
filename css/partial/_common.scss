@@ -1,0 +1,55 @@
+.graph .progress-bars div div:first-child {
+    div{
+        cursor: pointer;
+        background-color: $Soft_red;
+        position: relative;
+    }
+    div:hover{
+        background: hsla(10, 79%, 65%, 0.5);
+    }
+    div:hover::before{
+        content: "";
+        font-size: 1.4rem;
+        font-weight: $large;
+        position: absolute;
+        top: -40px;
+        left: -3px;
+        background-color: $Dark_brown;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55px;
+        height: 30px;
+    }
+}
+
+@media(max-width:500px){ 
+.graph .progress-bars div div:first-child {
+    div{
+        cursor: pointer;
+        background-color: $Soft_red;
+        position: relative;
+    }
+    div:hover{
+        background: hsla(10, 79%, 65%, 0.5);
+    }
+    div:hover::before{
+        content: "";
+        font-size: 1.2rem;
+        font-weight: $large;
+        position: absolute;
+        top: -40px;
+        left: -5px;
+        background-color: $Dark_brown;
+        color: white;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 48px;
+        height: 30px;
+    }
+}
+}

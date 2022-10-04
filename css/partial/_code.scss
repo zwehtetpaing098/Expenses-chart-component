@@ -1,0 +1,152 @@
+section{
+    main{
+        width: 450px;
+        .balance{
+            height: 100px;
+            border-radius: 15px;
+            background-color: $Soft_red;
+            .money{
+                color: white;
+                p{
+                    font-size: 1.4rem;
+                }
+                h1{
+                    font-weight: $large;
+                }
+            }
+            .img{
+                width: 72px;
+                height: 48px;
+                background-image: url(../images/logo.svg);
+            }
+        }
+        .graph{
+            background-color: $Very_pale_orange;
+            height: 450px;
+            border-radius: 15px;
+            h1{
+                color: $Dark_brown;
+            }
+            .progress-bars{
+                height: 250px;
+                border-bottom: 2px solid $Cream;
+                div{
+                    display: flex;
+                    flex-direction: column;
+                    width: 45px;
+                    div:first-child{
+
+                        .progress1{
+                            height: 25%;
+                        }
+                        .progress1:hover::before{
+                            content: "$20.01";
+                        }
+
+                        .progress2{
+                            height: 50%;
+                        }
+                        .progress2:hover::before{
+                            content: "$35.06";
+                        }
+
+                        .progress3{
+                            height: 75%;
+                        }
+                        .progress3:hover::before{
+                            content: "$52.36";
+                        }
+
+                        .progress4{
+                            height: 45%;
+                        }
+                        .progress4:hover::before{
+                            content: "$31.07";
+                        }
+
+                        .progress5{
+                            height: 35%;
+                        }
+                        .progress5:hover::before{
+                            content: "$25.66";
+                        }
+
+                        .progress6{
+                            height: 65%;
+                        }
+                        .progress6:hover::before{
+                            content: "$48.96";
+                        }
+
+                        .progress7{
+                            height: 40%;
+                        }
+                        .progress7:hover::before{
+                            content: "$29.56";
+                        }
+
+                        .wed{
+                            background-color: $Cyan;
+                        }
+                        .wed:hover{
+                            background-color: hsl(186, 34%, 60%, 0.5);
+                        }
+                        
+                    }
+                    div:last-child{
+                        p{
+                            color: $Medium_brown;
+                            font-size: $small;
+                            font-size: 1.4rem;
+                        }
+                    }
+                }
+            }    
+            .total{
+                .amount{
+                    h1{
+                        font-size: 3.8rem;
+                        font-weight: $large;
+                        color: $Dark_brown;
+                        position: relative;
+                    }
+                    h1::before{
+                        content: "Total this month";
+                        font-size: 1.6rem;
+                        position: absolute;
+                        top: -20px;
+                        color: $Medium_brown;
+                        font-weight: $small;
+                    }
+                }
+                .percentage{
+                    p{
+                        font-size: 1.6rem;
+                        font-weight: $small;
+                        position: relative;
+                        color: $Medium_brown;
+                    }
+                    p::before{
+                        content: "+2.4%";
+                        position: absolute;
+                        top: -20px;
+                        left: 70px;
+                        color: $Dark_brown;
+                        font-weight: $large;
+                    }
+                }
+            
+            }
+        }
+    }
+}
+
+@media(max-width:500px){
+    section main{
+        width: 365px;
+
+        .graph .progress-bars div{
+            width: 35px;
+        }
+    }
+}

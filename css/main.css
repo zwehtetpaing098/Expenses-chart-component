@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.8rem;
+  background-color: hsl(27deg, 66%, 92%);
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.graph .progress-bars div div:first-child div {
+  cursor: pointer;
+  background-color: hsl(10deg, 79%, 65%);
+  position: relative;
+}
+.graph .progress-bars div div:first-child div:hover {
+  background: hsla(10deg, 79%, 65%, 0.5);
+}
+.graph .progress-bars div div:first-child div:hover::before {
+  content: "";
+  font-size: 1.4rem;
+  font-weight: 700;
+  position: absolute;
+  top: -40px;
+  left: -3px;
+  background-color: hsl(25deg, 47%, 15%);
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 30px;
+}
+
+@media (max-width: 500px) {
+  .graph .progress-bars div div:first-child div {
+    cursor: pointer;
+    background-color: hsl(10deg, 79%, 65%);
+    position: relative;
+  }
+  .graph .progress-bars div div:first-child div:hover {
+    background: hsla(10deg, 79%, 65%, 0.5);
+  }
+  .graph .progress-bars div div:first-child div:hover::before {
+    content: "";
+    font-size: 1.2rem;
+    font-weight: 700;
+    position: absolute;
+    top: -40px;
+    left: -5px;
+    background-color: hsl(25deg, 47%, 15%);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 48px;
+    height: 30px;
+  }
+}
+section main {
+  width: 450px;
+}
+section main .balance {
+  height: 100px;
+  border-radius: 15px;
+  background-color: hsl(10deg, 79%, 65%);
+}
+section main .balance .money {
+  color: white;
+}
+section main .balance .money p {
+  font-size: 1.4rem;
+}
+section main .balance .money h1 {
+  font-weight: 700;
+}
+section main .balance .img {
+  width: 72px;
+  height: 48px;
+  background-image: url(../images/logo.svg);
+}
+section main .graph {
+  background-color: hsl(33deg, 100%, 98%);
+  height: 450px;
+  border-radius: 15px;
+}
+section main .graph h1 {
+  color: hsl(25deg, 47%, 15%);
+}
+section main .graph .progress-bars {
+  height: 250px;
+  border-bottom: 2px solid hsl(27deg, 66%, 92%);
+}
+section main .graph .progress-bars div {
+  display: flex;
+  flex-direction: column;
+  width: 45px;
+}
+section main .graph .progress-bars div div:first-child .progress1 {
+  height: 25%;
+}
+section main .graph .progress-bars div div:first-child .progress1:hover::before {
+  content: "$20.01";
+}
+section main .graph .progress-bars div div:first-child .progress2 {
+  height: 50%;
+}
+section main .graph .progress-bars div div:first-child .progress2:hover::before {
+  content: "$35.06";
+}
+section main .graph .progress-bars div div:first-child .progress3 {
+  height: 75%;
+}
+section main .graph .progress-bars div div:first-child .progress3:hover::before {
+  content: "$52.36";
+}
+section main .graph .progress-bars div div:first-child .progress4 {
+  height: 45%;
+}
+section main .graph .progress-bars div div:first-child .progress4:hover::before {
+  content: "$31.07";
+}
+section main .graph .progress-bars div div:first-child .progress5 {
+  height: 35%;
+}
+section main .graph .progress-bars div div:first-child .progress5:hover::before {
+  content: "$25.66";
+}
+section main .graph .progress-bars div div:first-child .progress6 {
+  height: 65%;
+}
+section main .graph .progress-bars div div:first-child .progress6:hover::before {
+  content: "$48.96";
+}
+section main .graph .progress-bars div div:first-child .progress7 {
+  height: 40%;
+}
+section main .graph .progress-bars div div:first-child .progress7:hover::before {
+  content: "$29.56";
+}
+section main .graph .progress-bars div div:first-child .wed {
+  background-color: hsl(186deg, 34%, 60%);
+}
+section main .graph .progress-bars div div:first-child .wed:hover {
+  background-color: hsla(186deg, 34%, 60%, 0.5);
+}
+section main .graph .progress-bars div div:last-child p {
+  color: hsl(28deg, 10%, 53%);
+  font-size: 400;
+  font-size: 1.4rem;
+}
+section main .graph .total .amount h1 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: hsl(25deg, 47%, 15%);
+  position: relative;
+}
+section main .graph .total .amount h1::before {
+  content: "Total this month";
+  font-size: 1.6rem;
+  position: absolute;
+  top: -20px;
+  color: hsl(28deg, 10%, 53%);
+  font-weight: 400;
+}
+section main .graph .total .percentage p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  position: relative;
+  color: hsl(28deg, 10%, 53%);
+}
+section main .graph .total .percentage p::before {
+  content: "+2.4%";
+  position: absolute;
+  top: -20px;
+  left: 70px;
+  color: hsl(25deg, 47%, 15%);
+  font-weight: 700;
+}
+
+@media (max-width: 500px) {
+  section main {
+    width: 365px;
+  }
+  section main .graph .progress-bars div {
+    width: 35px;
+  }
+}/*# sourceMappingURL=main.css.map */
